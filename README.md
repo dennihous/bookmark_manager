@@ -26,3 +26,11 @@ I would like to add the site's address and title to bookmark manager
 
 ### Domain model
 ![image](https://user-images.githubusercontent.com/95698256/158204600-a6ab93a7-d177-406a-90da-c850e6bc3bb4.png)
+
+### Importing SQL database
+
+- Connect to psql
+- Create the database using the psql command CREATE DATABASE bookmark_manager;
+- Move out of psql
+- psql -d bookmark_manager -f 01_create_bookmarks_table.sql 
+- Connect to the database using the psql command \c bookmark_manager;
